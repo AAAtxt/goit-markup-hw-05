@@ -146,12 +146,15 @@ img {
 .current::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
   display: block;
   width: 100%;
   height: 4px;
   border-radius: 2px;
   background: var(--accent-color);
+  color: var(--accent-color);
+}
+.current {
   color: var(--accent-color);
 }
 .header-mail,
@@ -750,6 +753,9 @@ img {
   overflow: auto;
 }
 
-.portfolio-examples-item:hover .appearing-text {
+.portfolio-link:hover .appearing-text {
+  transform: translateY(0);
+}
+.portfolio-link:focus .appearing-text {
   transform: translateY(0);
 }
